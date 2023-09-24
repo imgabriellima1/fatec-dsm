@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap');
+
+body
+{
+	margin: 0;
+	padding: 0;
+	background-color: #E5E5E5;
+	font-family: 'Poppins', sans-serif;
+	overflow:auto;
+}
+
+.header 
+{	
+	min-height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(0,0,0, 0.65),rgba(0,0,0, 0.65)), url(/img/capa.jpg);	
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+	
+nav
+{
+	display: flex;
+	padding: 1% 4%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav img
+{
+	width: 150px;
+}
+
+.nav-links
+{
+	flex: 1;
+	text-align: right;
+}
+
+.nav-links ul li
+{
+	list-style: none;
+	display: inline-block;
+	padding: 0% 2%;
+	position: relative;
+}
+
+.nav-links ul li a
+{
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+.nav-links ul li::after
+{
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: #1D733b;
+	color: #1D733b;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+
+.nav-links ul li:hover::after
+{
+	width: 100%;
+}
+
+.text-box
+{
+	width: 100%;
+	color: #FFFFFF;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.text-box h1
+{
+	font-size: 62px;
+}
+
+.button-conhecer
+{
+	display: inline-block;
+	text-decoration: none;
+	color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+	padding: 12px 34px;
+	font-size: 13px;
+	background: transparent;
+	position: relative;
+	cursor: pointer;
+}
+
+.button-conhecer:hover
+{
+	border: 1px solid #FFFFFF;
+	background: rgba(255, 255, 255, 0.25);
+	transition: 1s;
+}
+
+@media (max-width: 700px) 
+{
+	.text-box
+	{
+		top: 25%;
+	}
+
+	.text-box h1
+	{
+		font-size: 25px;
+	}
+
+	.nav-links ul li
+	{
+		display: block;
+	}
+
+	.nav-links
+	{
+		position: absolute;
+		background: #0babd3;
+		height: 100vh;
+		width: 200px;
+		top: 0px;
+		right: 0px;
+		text-align: left;
+		z-index: 2;
+	}
+
+	
+
+}
+
+/*----- veja-carros -----*/
+
+.veja-carros
+{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 30px;
+}
+
+h1
+{
+	font-size: 36px;
+	font-weight: 600;
+}
+
+p
+{
+	color: #181818;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 22px;
+	padding: 10px;
+}
+
+.produto
+{ 
+	margin-top: 5%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.produto h3
+{
+	color: blueviolet;
+}
+
+.veja-carros-col
+{
+	flex-basis: 31%;
+	background: #f9f9f9;
+	border-radius: 2px;
+	margin-bottom: 5%;
+	padding: 20px 12px;
+	box-sizing: border-box;
+	transition: 0.75s;
+}
+
+.veja-carros-col img
+{
+	width: 225px;
+	height: 200px;
+	border-radius: 2px;
+	position: relative;
+	overflow: hidden;
+}
+
+h3
+{
+	text-align: center;
+	font-weight: 600;
+	margin: 10PX 0;
+}
+
+.veja-carros-col:hover
+{
+	box-shadow: 0 0 20px 0px rgba(0,0,0, 0.65);
+}
+
+/* Pag Entrar */
+
+.entrar
+{
+	width: 100%;
+	color: #FFFFFF;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	/*flex-basis: 31%;
+	background: #f9e9e9;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	padding: 20px 12px;
+	box-sizing: border-box;
+	transition: 0.75s;*/
+}
+
+
+
+/*
+	parou no 23:45 min
+	ou 35:45
+
+	overflow: hidden;
+	color: #FFFFFF;
+	font-size: 18px;
+	transition: 1s;
+	background: rgba(0, 0, 0, 0.65);
+	background-position: center;
+	background-size: cover;
+*/
+
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.secao-membro {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 25px;
+	background-color: rgba(219, 216, 216, 0.733);
+	padding-left: 150px;
+	padding-right: 150px;
+}
+
+.foto-membro {
+	width: 300px;
+	height: 300px;
+}
+
+.nome-membro{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 30px;
+	color: #1D733b;
+
+}
+
+.sobre-membro{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	padding-right: 15px;
+}
+
+.cabecalho {
+	background-color: #1D733b;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.cabecalho > a > img {
+	height: 50px;
+}
+.cabecalho-logo{
+	padding-left: 50px;
+}
+
+.cabecalho-nav {
+
+}
+
+.cabecalho-nav-item {
+	list-style: none;
+	display: flex;
+	color: white;
+	font-family: 'Open Sans', sans-serif;;
+}
+
+.cabecalho-nav-item > li{
+	padding-left: 20px;
+}
+

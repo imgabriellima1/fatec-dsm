@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    
+}
+
+.formulario{
+    width: 40%;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    border: 1px solid #255937;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+h2{
+    text-align: center;
+    color: #255937;
+}
+.margin-forms{
+    margin: 50px;
+    padding: 30px;
+}
+nav{
+    background-color: #255937;
+    width: 100%;
+    height: 50px;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+}
+input {
+    font-size: 15px;
+    padding: 20px 5px 5px;
+    width: 100%;
+    border: 1px solid #255937;
+    border-radius: 5px;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: #255937;
+    color:#f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+label{
+    color: #255937;
+    font-size: 20px;
+    font: bold;
+}
+.checkbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+button{
+    color: white;
+    background-color: #255937;
+    border: none;
+    margin-top: 10px;
+    height: 40px;
+    width: 130px;
+    font-size: 17px;
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário HTML sem css</title>
+    <link rel="stylesheet" href="css/style-contato.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <a href="">
+                <li>Curriculo</li>
+            </a>
+            <a href="">
+                <li>Contato</li>
+            </a>
+            <a href="">
+                <li>Galeria</li>
+            </a>
+        </ul>
+    </nav>
+
+    <div class="formulario">
+        <div class="margin-forms">
+            <form action="">
+                    <h2>Dados pessoais</h2>
+                    <div>
+                        <label for="name">Nome:</label>
+                        <input type="text" placeholder="Digite o seu nome">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="text" placeholder="Digite o seu email">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="number">Idade:</label>
+                        <input type="number">
+                    </div>
+                    <br>
+            
+                    <div>
+                        <label for="text">Telefone:</label>
+                        <input type="text" placeholder="(11)90909-9090">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="date">Data de nascimento:</label>
+                        <input type="date">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="sexo">Sexo:</label>
+                        <select name="sexo" >
+                            <option value="Masculino">Masculino</option>
+                            <option value="Casado(a)">feminino</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="estado_civil">Estado Civil:</label>
+                        <select name="estado_civil" >
+                            <option value="Solteiro(a)">Solteiro(a)</option>
+                            <option value="Casado(a)">Casado(a)</option>
+                            <option value="Divorciado(a)">Divorciado(a)</option>
+                            <option value="Viúvo(a)">Viúvo(a)</option>
+                        </select>
+                    </div>
+                    <br>
+                    <h2>Dados da empresa</h2>
+                    <div>
+                        <label for="CEP">CEP:</label>
+                        <input type="text">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="">Tipo do logradouro:</label>
+                        <input list="tipo-logradouro" />
+                        <datalist id="tipo-logradouro">
+                          <option value="Rua"></option>
+                          <option value="Avenida"></option>
+                          <option value="Praça"></option>
+                        </datalist>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="logradouro">Logradouro:</label>
+                        <input type="text">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="cidade">Cidade:</label>
+                        <input type="text">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="">Estado:</label>
+                        <input list="estado" />
+                        <datalist id="estado">
+                          <option value="AC">AC</option>
+                          <option value="AL">AL</option>
+                          <option value="AP">AP</option>
+                          <option value="AM">AM</option>
+                          <option value="BA">BA</option>
+                          <option value="CE">CE</option>
+                          <option value="DF">DF</option>
+                          <option value="ES">ES</option>
+                          <option value="GO">GO</option>
+                          <option value="MA">MA</option>
+                          <option value="MT">MT</option>
+                          <option value="MS">MS</option>
+                          <option value="MG">MG</option>
+                          <option value="PA">PA</option>
+                          <option value="PB">PB</option>
+                          <option value="PR">PR</option>
+                          <option value="PE">PE</option>
+                          <option value="PI">PI</option>
+                          <option value="RJ">RJ</option>
+                          <option value="RN">RN</option>
+                          <option value="RO">RO</option>
+                          <option value="RR">RR</option>
+                          <option value="SC">SC</option>
+                          <option value="SP">SP</option>
+                          <option value="SE">SE</option>
+                          <option value="TO">TO</option>
+                        </datalist>
+                    </div>
+                    <br>
+                    <h2>Assunto</h2>
+                    <div>
+                        <textarea name="" id="" cols="100%" rows="10"></textarea>
+                    </div>
+
+                    <h2>Serviços de interesse</h2>
+                    <br>
+                    <div>
+                        <label for="checkbox" >Desenvolvimento de website</label>
+                        <input type="checkbox" class="checkbox" >
+                    </div>
+                    <div>
+                        <label for="checkbox" >Criação de imagens</label>
+                        <input type="checkbox" class="checkbox">
+                    </div>
+                    <div>
+                        <label for="checkbox" >Desenvolvimento de aplicativo</label>
+                        <input type="checkbox" class="checkbox">
+                    </div>
+                    <div>
+                        <label for="checkbox" >Tratamento de imagens</label>
+                        <input type="checkbox" class="checkbox">
+                    </div>
+                    <br>
+
+                    <h2>Está safisfeito com nosso site?</h2>
+                    <div>
+                        <label>SIM</label>
+                        <input type="radio" name="satisfeito" >
+                    </div>
+                    <div>
+                        <label>NÃO</label>
+                        <input type="radio"  name="satisfeito" >
+                    </div>
+                    <div>
+                        <label>PREFIRO NÃO DIZER</label>
+                        <input type="radio" name="satisfeito" >
+                    </div>
+            
+            
+        </div>
+    </div>
+
+</form>
+
+    <div class="button"><button>Enviar</button></div>
+
+    <footer>
+        <p>Todos os direitos reservados</p>
+    </footer>
+
+</body>
+</html>
