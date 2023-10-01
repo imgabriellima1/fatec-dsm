@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        .secao-membro {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 25px;
+            background-color: rgba(219, 216, 216, 0.733);
+            padding-left: 150px;
+            padding-right: 150px;
+        }
+
+        .foto-membro {
+            width: 300px;
+            height: 300px;
+        }
+
+        .nome-membro{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 30px;
+            color: #1D733b;
+
+        }
+
+        .sobre-membro{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 15px;
+            padding-right: 15px;
+        }
+
+        .cabecalho {
+            background-color: #1D733b;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .cabecalho > a > img {
+            height: 50px;
+        }
+        .cabecalho-logo{
+            padding-left: 50px;
+        }
+
+        .cabecalho-nav {
+
+        }
+
+        .cabecalho-nav-item {
+            list-style: none;
+            display: flex;
+            color: white;
+            font-family: 'Open Sans', sans-serif;;
+        }
+
+        .cabecalho-nav-item > li{
+            padding-left: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <header class="cabecalho">
+
+        <a href="index.html" class="cabecalho-logo"><img src="..\T1_GRUPO\Foto\logo-fatec.png" alt="Logo Fatec"></a>
+        
+        <nav class="cabecalho-nav">
+            <ul>
+                <li class="cabecalho-nav-item"><a href="">Galeria</a></li>
+                <li class="cabecalho-nav-item"><a href="">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="secao-membro">
+            <div>
+                <img class="foto-membro" src="..\T1_GRUPO\Foto\foto-gabriel.jpg" alt="Foto de rosto do membro do grupo: Gabriel">
+            </div>
+            <div>
+                <h2 class="nome-membro">Gabriel Freitas de Lima</h2>
+                <p class="sobre-membro">
+                    Formação Academica:
+                    <br>
+                    Experiência Profissional:
+                    <br>
+                    Informações de contato:
+                    <br>
+                </p>
+            </div>
+        </section>
+        <br>
+        <section class="secao-membro" style="flex-direction: row-reverse">
+            <div>
+                <img class="foto-membro" src="..\T1_GRUPO\Foto\foto-gabriel.jpg" alt="Foto de rosto do membro do grupo: Gabriel">
+            </div>
+            <div>
+                <h2 class="nome-membro">Gabriel Freitas de Lima</h2>
+                <p class="sobre-membro">
+                    Olá, me chamo Gabriel, sou graduado em Processos Gerenciais, bacharel em Administração e possuo formações técnicas em Design e Computação Gráfica. Minha especialização atual é Desenvolvimento de Software em Multiplataforma. 
+                    <br>
+                    Iniciei minha carreira na área de Projetos de Negócios no banco Bradesco como Jovem Aprendiz, onde posteriormente atuei como Analista de Projetos.
+                    <br>
+                    Possuo experiências também com elaboração de análises estatísticas, relatórios operacionais, apresentações gerenciais/estratégicas e produção de peças gráficas, vetorial e digital.
+                    <br>
+                    Recentemente, decidi migrar para área de TI, atuando atualmente como Analista de Sistemas (desenvolvimento Front-End) de Design System.
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

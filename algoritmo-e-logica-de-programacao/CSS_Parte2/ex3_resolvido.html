@@ -1,0 +1,86 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+   <head>
+      <meta charset="utf-8">
+      <title>FAST - Loja Virtual</title>
+      <style>
+      /* Regra CSS para formatar a tabela, o cabeçalho e as colunas (td
+      NOTA: a regra foi aplicada ao mesmo tempo para os elementos separados por vírgula*/
+      table,  th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+        /* Regra CSS especificando que o tamanho da tabela sempre ocupará o espaço total do dispositivo (computador, celular, etc)*/         
+        table {width: 100%;}
+        /* #tbProdutos caption { font-size: 30px;} */
+        /* Regra CSS aplicada no elemento com ID="titulo1"  (título da tabela) */
+        #titulo1 {             padding: 30px; /* espaço entre o conteúdo e a margem */
+            font-size: 30px;             border: solid;             background-color: greenyellow;         }                 /* Regra CSS aplicada no elmento th*/         th { background-color: tomato;}         /* Regra CSS aplicada no elmento tfoot*/         tfoot {             font-family: 'Courier New', Courier, monospace;         }                   /*             #colunas_de_notas { background-color: khaki;}              #colunas_de_notas { text-align: center;}         td {             text-align: center;         }         #tbProdutos td { text-align: right;}          */         tbody { border: solid;}         tbody { text-align: left;}         /* Regra CSS aplicada no  primeiro elemento td que está dentro de tbody, que está dentro do elemento identificado pelo ID="tbProdutos" */         #tbProdutos tbody td:first-child  { background-color:yellowgreen}                 /* Regra CSS aplicada no segundo elemento td que está dentro do elemento table (aqui identificado pelo ID) */         #tbProdutos td:nth-child(2) { background-color: rgb(214, 214, 123) ;}         /* Regra CSS aplicada no terceiro elemento td que está dentro do elemento table (aqui identificado pelo ID) */         #tbProdutos td:nth-child(3) { background-color: rgb(214, 214, 123)  ;}         /* Regra CSS aplicada no quarto elemento td que está dentro do elemento table (aqui identificado pelo ID) */         #tbProdutos td:nth-child(4) { background-color: rgb(160, 160, 117) ;}         /* Regra CSS aplicada no quinto elemento td que está dentro do elemento table (aqui identificado pelo ID) */         #tbProdutos td:nth-child(5) { background-color: rgb(160, 160, 117) ;}                 /* Regra CSS aplicada no quarto elemento td que está dentro do elemento table (aqui identificado pelo ID) */         #tbProdutos td:nth-child(4) { text-align: right ;}               /* Regra CSS aplicada no quinto elemento td que está dentro do elemento table (aqui identificado pelo ID) */         #tbProdutos td:nth-child(5) { text-align: right ;}         /* Regra CSS aplicada no elmento identificado pelo ID="lin3col4" */         #lin3col4 { color:  red; font-size: 20px;}         /* A formatação via ID não pode ser substituida por uma formatação na seq. via elemento             descomente (retire o _ ) a regra abaixo para verificar         */         #rodape1 {             _background-color: cyan;         }         /* Regra CSS aplicada no elemento tfoot */         tfoot { text-align: center;}         
+        tfoot { background-color: seagreen}
+        </style>
+   </head>
+   <body>
+      <table id="tbProdutos">
+         <!-- Não são todas as propriedades quer podem ser formatadas por meio de um colgroup -->         
+         <colgroup>
+            <col id="colunas_de_nomes">
+            <col id="colunas_de_notas" span="4">
+         </colgroup>
+         <!--  quarta-  15h30 17h30   sala 14 / Liliam    padaria,  -->         
+         <caption id="titulo1"> Lista de produtos da loja virtual </caption>
+         <thead>
+            <tr>
+               <th> Código</th>
+               <th> Descrição</th>
+               <th> Unidade</th>
+               <th> Quantidade <br> estoque</th>
+               <th> Preço venda</th>
+               <!--                 <th colspan="2"> col2</th>                 -->             
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td> 001</td>
+               <td> Areia</td>
+               <td> M3</td>
+               <td> 20 </td>
+               <td> 80,00</td>
+            </tr>
+            <tr>
+               <td> 002</td>
+               <td> Pedra</td>
+               <td> M3</td>
+               <td> 40 </td>
+               <td> 90,00</td>
+            </tr>
+            <tr>
+               <td> 003</td>
+               <td> Bloco concreto</td>
+               <td> MILHEI</td>
+               <td id="lin3col4"> 0 </td>
+               <td> 980,00</td>
+            </tr>
+            <tr>
+               <td> 004</td>
+               <td> Cimento</td>
+               <td> UNID</td>
+               <td> 50 </td>
+               <td> 18,00</td>
+            </tr>
+            <tr>
+               <td> 005</td>
+               <td> Ferro</td>
+               <td> BARRA</td>
+               <td> 12 </td>
+               <td> 30,00</td>
+            </tr>
+         </tbody>
+         <tfoot>
+            <tr>
+               <!-- <td id="rodape1" colspan="4"> *** Total de alunos 4 ***</td> -->                 
+               <td id="rodape1" colspan="5"> *** Total de produtos 5 ***</td>
+            </tr>
+         </tfoot>
+      </table>
+   </body>
+</html>
